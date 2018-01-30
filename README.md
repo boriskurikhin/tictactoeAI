@@ -99,8 +99,9 @@ A STRANGE GAME.
 THE ONLY WINNING MOVE IS
 ```
 
-  *I blocked the AI at the bottom-left corner by placing an _O_, the AI made a move to the middle of the board, creating a 100% winning opportunity.
-  *I tried blocking the AI by moving to the bottom left corner of the grid, but the AI was smart and seeked out an opprtunity to win the game by moving to the mid-right corner of the board.
+  * I blocked the AI at the bottom-left corner by placing an _O_, the AI made a move to the middle of the board, creating a 100% winning opportunity.
+  
+  * I tried blocking the AI by moving to the bottom left corner of the grid, but the AI was smart and seeked out an opprtunity to win the game by moving to the mid-right corner of the board.
   
  You can install and play the game by downloading all of the **important** files, placing them in a single folder, and running these exact commands in sequence:
 ```
