@@ -5,12 +5,9 @@ It develops a binary file consisting of bits representing possible strategies fo
 
 The program contains 8 important files, the rest are either excecutables or debug stuff.
 
-1. makefile
-  * Helps us create excecutables and compile all our programs with _-Wall -ansi -pedantic_ tags
-2. tictactoe.h
-  * Contains all function definitions
-3. tictactoe.c
-  * Contains all functions, including a very important function tied closely with our AI _evalMove_
+**makefile** - helps us create excecutables and compile all our programs with _-Wall -ansi -pedantic_ tags
+**tictactoe.h** - contains all function definitions
+**tictactoe.c** - contains all functions, including a very important function tied closely with our AI _evalMove_
   ```c
   void evalMove(struct strategy_struct *record, unsigned short board, FILE* fp) {
 	unsigned short nextBoard;
@@ -51,5 +48,100 @@ The program contains 8 important files, the rest are either excecutables or debu
 	}
 }
 ```
-  
-  
+**a1p1.c** - this program is just a checker to ensure all functions work
+**a1p2.c** - populates the binary file with default data
+```c
+struct strategy_struct {
+  char best_move;
+  char winner;
+};
+```
+**a1p3.c** - a very important program that populates and creates our AI using _evalMove_, which I linked above.
+**a1p4.c** - similar to **a1p1.c**, this program just ensures that **a1.p3** is working correctly.
+**a1p5.c** - last program; interactive game.
+
+Sample Game:
+```
+SHALL WE PLAY A GAME?
+
+PLEASE ENTER YOUR NAME: Boris
+GREETINGS Boris
+
+Which side would you like to play (X/O)? O
+
+Ok, you will be O; I will be X.
+
+   |   |   
+---+---+---
+   |   |   
+---+---+---
+   |   |   
+
+My turn; my move is 0:
+
+ X |   |   
+---+---+---
+   |   |   
+---+---+---
+   |   |   
+
+Your turn; chose a move [0-8]:0
+
+Invalid move!
+
+Your turn; chose a move [0-8]:1
+
+
+ X | O |   
+---+---+---
+   |   |   
+---+---+---
+   |   |   
+
+My turn; my move is 3:
+
+ X | O |   
+---+---+---
+ X |   |   
+---+---+---
+   |   |   
+
+Your turn; chose a move [0-8]:6
+
+
+ X | O |   
+---+---+---
+ X |   |   
+---+---+---
+ O |   |   
+
+My turn; my move is 4:
+
+ X | O |   
+---+---+---
+ X | X |   
+---+---+---
+ O |   |   
+
+Your turn; chose a move [0-8]:8
+
+
+ X | O |   
+---+---+---
+ X | X |   
+---+---+---
+ O |   | O 
+
+My turn; my move is 5:
+
+ X | O |   
+---+---+---
+ X | X | X 
+---+---+---
+ O |   | O 
+
+I won!
+
+A STRANGE GAME.
+THE ONLY WINNING MOVE IS
+```
