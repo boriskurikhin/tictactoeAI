@@ -1,4 +1,4 @@
-#TicTacToe AI
+# TicTacToe AI
 
 This program was developed for a computer science assignment. It's a simple AI for a single-player tictactoe game. 
 It develops a binary file consisting of bits representing possible strategies for all possible/non-possible boards in the game. 
@@ -11,7 +11,7 @@ The program contains 8 important files, the rest are either excecutables or debu
   * Contains all function definitions
 3. tictactoe.c
   * Contains all functions, including a very important function tied closely with our AI _evalMove_
-  '''c
+  ```c
   void evalMove(struct strategy_struct *record, unsigned short board, FILE* fp) {
 	unsigned short nextBoard;
 	char result;
@@ -50,6 +50,6 @@ The program contains 8 important files, the rest are either excecutables or debu
 		}
 	}
 }
-  '''
+```
   
   
