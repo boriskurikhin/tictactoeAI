@@ -60,61 +60,8 @@ struct strategy_struct {
 **a1p4.c** - similar to **a1p1.c**, this program just ensures that **a1.p3** is working correctly.
 **a1p5.c** - last program; interactive game.
 
-Sample Game:
+Sample Interaction:
 ```
-SHALL WE PLAY A GAME?
-
-PLEASE ENTER YOUR NAME: Boris
-GREETINGS Boris
-
-Which side would you like to play (X/O)? O
-
-Ok, you will be O; I will be X.
-
-   |   |   
----+---+---
-   |   |   
----+---+---
-   |   |   
-
-My turn; my move is 0:
-
- X |   |   
----+---+---
-   |   |   
----+---+---
-   |   |   
-
-Your turn; chose a move [0-8]:0
-
-Invalid move!
-
-Your turn; chose a move [0-8]:1
-
-
- X | O |   
----+---+---
-   |   |   
----+---+---
-   |   |   
-
-My turn; my move is 3:
-
- X | O |   
----+---+---
- X |   |   
----+---+---
-   |   |   
-
-Your turn; chose a move [0-8]:6
-
-
- X | O |   
----+---+---
- X |   |   
----+---+---
- O |   |   
-
 My turn; my move is 4:
 
  X | O |   
@@ -145,3 +92,16 @@ I won!
 A STRANGE GAME.
 THE ONLY WINNING MOVE IS
 ```
+
+  *I blocked the AI at the bottom-left corner by placing an _O_, the AI made a move to the middle of the board, creating a 100% winning opportunity.
+  *I tried blocking the AI by moving to the bottom left corner of the grid, but the AI was smart and seeked out an opprtunity to win the game by moving to the mid-right corner of the board.
+  
+ You can install and play the game by downloading all of the **important** files, placing them in a single folder, and running these exact commands in sequence:
+```
+make
+./a1p2
+./a1p3 9,8,7,6,5,4,3,2,1,0.
+./a1p5
+```
+
+### Have fun!
