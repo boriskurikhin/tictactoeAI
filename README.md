@@ -62,7 +62,7 @@ struct strategy_struct {
 ```
 **a1p3.c** - a very important program that populates and creates our AI using _evalMove_, which I linked above.
 
-**a1p4.c** - similar to **a1p1.c**, this program just ensures that **a1.p3** is working correctly.
+**a1p4.c** - similar to **a1p1.c**, this program just ensures that **a1p3.c** is working correctly.
 
 **a1p5.c** - last program; interactive game.
 
