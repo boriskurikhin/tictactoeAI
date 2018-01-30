@@ -1,11 +1,5 @@
 #include "tictactoe.h"
 
-/*
-	Boris Skurikhin
-	1007339
-	A1 - P1
-*/
-
 int main(int argc, char *argv[]) {
 
 	unsigned short boardNum;
