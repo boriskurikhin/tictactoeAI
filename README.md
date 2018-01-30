@@ -66,7 +66,7 @@ struct strategy_struct {
 
 **a1p5.c** - last program; interactive game.
 
-Sample Interaction:
+_Sample Interaction_:
 ```
 My turn; my move is 4:
 
