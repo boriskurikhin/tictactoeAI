@@ -1,11 +1,5 @@
 #include "tictactoe.h"
 
-/*
-	Boris Skurikhin
-	1007339
-	A1 - P5
-*/
-
 int main(){
   char name[41] = "", boardPic[60], b3[10] = "000000000";
   int turn = 1, pos = 0, i, instawin = 0;
